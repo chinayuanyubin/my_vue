@@ -1,0 +1,39 @@
+.ebank-list{
+	width: 90%;
+	margin: 0px auto;
+}
+.ebank-item{
+	background-color: #fff;
+	border-radius: 6px;
+	padding-top: 5px;
+	margin-top: 5px;
+}
+.ebank-item>div{
+	margin-top: 5px;
+	padding:0 10px;
+}
+
+.ebank-item .top h3{
+	font-size: .14rem;
+}
+.ebank-item .handle {
+	border-top: 1px solid #eee;
+	padding: 10px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+.ebank-item .handle i{
+	margin-left: 10px;
+}
+.handle-icons{
+	margin-top: 5px;
+}
+.large-add-icon{
+	font-size: 20px;
+	font-weight: bold;
+}

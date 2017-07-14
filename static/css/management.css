@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+.head {
+  width: 100%;
+  height: 0.44rem;
+  position: relative;
+  line-height: 0.44rem;
+  border-bottom: 1px solid #F4F4F4;
+  background: #fff;
+}
+
+.back {
+  width: 0.44rem;
+  height: 0.44rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: .16rem;
+  font-weight: bold;
+}
+
+.mainList li {
+  position: relative;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  background: #fff;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0 0.4rem 0 15px;
+}
+
+.mainList-enter {
+  width: 0.4rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #f1f1f1;
+}
+
+.mainList-first .mainList-enter {
+  line-height: 0.5rem;
+}
+
+.mainList .mainList-first {
+  margin-bottom: 3px;
+  height: 0.5rem;
+  line-height: 0.5rem;
+}
+
+.mainList-first img {
+  float: right;
+  height: 0.4rem;
+  width: 0.4rem;
+  border-radius: 0.2rem;
+  margin-top: 0.05rem;
+}
+
+.mainList-layer {
+  border: 1px solid #f4f4f4;
+}
+
+.mainList .goHrefLi {
+  padding: 0;
+  margin-top: 3px;
+}
+
+.mainList .gone {
+  padding: 0;
+  margin-top: 7px;
+}
+
+.goHrefLi .goHref {
+  display: block;
+  width: 100%;
+  height: 0.4rem;
+  padding-left: 0.15rem;
+}
+
+.gone .goHref {
+  display: block;
+  width: 100%;
+  height: 0.4rem;
+  text-align: center;
+  color: #16D1D7;
+}
+
+.thisInp {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #f1f1f1;
+  color: #666;
+  padding-left: 5px;
+}
+
+.mainList-txt {
+  float: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 10em;
+  text-align: right;
+}
+
+.layui-m-layer-layer-bq1 .layui-m-layercont {
+  text-align: left;
+  padding-left: 70px;
+}
+
+.layui-m-layer-layer-bq1 label {
+  padding-left: 20px;
+}
+
+.checkboxLayer {
+  line-height: 30px;
+}
+
+
+/*更换头像*/
+
+.tx-default {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.txImg {
+  width: 100%;
+}
+
+#txUpload img {
+  width: 100%;
+}
+
+.sure {
+  width: 60px;
+  height: 0.44rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.layui-m-layer-compile {
+  margin-top: -2rem;
+}
+
+.layui-m-layerbtn span[yes] {
+  color: #16D1D7;
+  font-weight: bold;
+}
+
+
+/*复选框*/
+
+.checkboxLayer input[type="checkbox"],
+.zcrRevert input[type="checkbox"] {
+  display: none;
+  margin-right: 10px;
+}
+
+.checkboxLayer input[type="checkbox"]+label:before,
+.zcrRevert input[type="checkbox"]+label:after {
+  font-family: FontAwesome;
+  display: inline-block;
+  letter-spacing: 3px;
+  /*自定义*/
+  font-size: inherit;
+  color: #999;
+  /*防止图标长度不一样*/
+  width: 14px;
+  /*未选中的图标*/
+  content: "\f096";
+  margin-right: 10px;
+}
+
+.checkboxLayer input[type="checkbox"]:checked+label:before,
+.zcrRevert input[type="checkbox"]:checked+label:after {
+  /*选中时的图标*/
+  content: "\f14a";
+  color: #16D1D7;
+}
+
+.zcrRevert input[type="checkbox"]+label:after {
+  margin-left: 5px;
+}
+
+/*修改设置支付密码*/
+.setpwdlist li{
+  position: relative;
+  height: .45rem;
+  line-height: .45rem;
+  background: #fff;
+  border-bottom: 1px solid #f1f1f1;
+}
+.setpwdlist .setpwditemslast{
+  margin-top: .15rem;
+  background-color: #f4f4f4;
+}
+.itemslab{
+  display: block;
+  float: left;
+  width: 1.1rem;
+  padding-left: .1rem;
+  padding-right: .05rem;
+  font-size: .14rem;
+}
+.yzCodeBox{
+  float: left;  
+  position: relative;
+  height: .45rem;
+  width: 1.8rem;
+}
+.getCode,.getAgain{
+  height: .45rem;
+  padding: 0 .12rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+}
+.getCode{
+  background-color: #16d1d7;
+}
+.getAgain{
+  background-color: #ccc;
+  display: none;
+}
+#setPwd,#rePwd{
+  height: .43rem;
+  width: 2.6rem;
+}
+.setPwdSub{
+  display: block;
+  margin: 0 auto; 
+  width: 90%;
+  height: 0.45rem;
+  background-color: #16d1d7;
+  color: #fff;
+  font-size: .16rem;
+  text-align: center;
+}

@@ -1,0 +1,393 @@
+img {
+  display: block;
+}
+
+.template {
+  display: block;
+  position: absolute;
+  top: 0.02rem;
+  left: 1.1rem;
+  width: 1.8rem;
+  height: .35rem;
+}
+
+.fixed {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.fixed img {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.essay-tab {
+  padding: .08rem;
+  background: #1c8a7f;
+  font-size: 0;
+}
+
+.essay-tab>.tab-item {
+  display: inline-block;
+  width: 33.33333%;
+}
+
+.essay-tab>.tab-item img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.essay-tab>.tab-item p {
+  font-size: .12rem;
+  color: #fff;
+  text-align: center;
+  line-height: .24rem;
+}
+
+
+/*投稿表单*/
+
+.upadv-form-box {
+  background-color: #dc3d42;
+  color: #fff;
+}
+
+.upadv-form {
+  padding: .1rem .2rem;
+}
+
+.upadv-form label {
+  font-size: .16rem;
+}
+
+.form-title {
+  margin-top: 0.05rem;
+}
+
+.form-title input {
+  height: .3rem;
+  width: 2.2rem;
+  padding: 0 .03rem;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.form-visualize {
+  padding-top: .08rem;
+}
+
+.form-visualize-mb {
+  margin-top: .05rem;
+  padding-top: .08rem;
+}
+
+.form-visualize img {
+  margin-top: .1rem;
+}
+.form-visualize .break{
+  text-indent:2em;
+}
+.visualize-textarea {
+  width: 100%;
+  height: .85rem;
+  background-color: #fff;
+  color: #333;
+  margin-top: .08rem;
+  border-radius: 5px;
+  padding: 6px;
+  box-shadow: 0px 5px 8px #9d070b;
+}
+
+.form-category {
+  margin-top: 0.08rem;
+}
+
+.article-textarea {
+  width: 100%;
+  height: 2rem;
+  background-color: #fff;
+  color: #333;
+  margin-top: .08rem;
+  border-radius: 5px;
+  padding: 6px;
+  box-shadow: 0px 5px 8px #9d070b;
+}
+
+.form-visualize .explain {
+  margin-top: .05rem;
+}
+
+.submitBtn {
+  width: 2.8rem;
+  height: 0.4rem;
+  text-align: center;
+  background: #ffc523;
+  color: #fff;
+  font-size: .16rem;
+  border-radius: 5px;
+  margin: .6rem auto;
+  line-height: 0.4rem;
+}
+
+.form-category .icon-Spread-out {
+  position: relative;
+  top: 0;
+  left: -.2rem;
+  font-size: .14rem;
+}
+
+.visualize-small-box {
+  width: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  padding-top: .05rem;
+}
+
+.visualize-small-box1 {
+  margin: .6rem auto 0;
+}
+
+.visualize-small-box li {
+  -webkit-box-flex: 1;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  width: 20%;
+  /* For old syntax, otherwise collapses. */
+  -webkit-flex: 1;
+  /* Chrome */
+  flex: 1;
+  margin-left: .07rem;
+}
+
+.visualize-small-box li:first-child {
+  margin-left: 0;
+}
+
+.essay-list {
+  width: 95%;
+  margin: .1rem auto 0;
+}
+
+.essay-title-name {
+  margin-left: 0.15rem;
+  margin-bottom: .05rem;
+  color: #fff;
+  font-size: .16rem;
+  line-height: .3rem;
+  position: relative;
+}
+
+.essay-title-name:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 3px;
+  height: .2rem;
+  top: 0.05rem;
+  background-color: #fff;
+  left: -.13rem;
+}
+
+.essay-title-name>.more {
+  float: right;
+  line-height: .29rem;
+  color: #fff;
+  font-size: .14rem;
+}
+
+.essay-title-name>.more>i {
+  font-size: .14rem;
+}
+
+.essay-item {
+  padding: 2px .15rem;
+}
+
+.essay-item a {
+  color: #fff;
+}
+
+.template-author {
+  margin-top: -.3rem;
+  font-size: .14rem;
+  font-weight: 800;
+  text-align: right;
+  padding-right: .2rem;
+  color: #677985;
+}
+
+.template-author a {
+  text-decoration: underline;
+  color: #ec931f;
+}
+
+.link-item2,
+.link-item3 {
+  padding-bottom: .7rem;
+  background-color: #1c8a7f;
+}
+
+.bgcolor {
+  background-color: #92bfde;
+  color: #fff;
+}
+
+.bgcolor a.common-header-left {
+  color: #fff;
+}
+
+.classify {
+  width: 90%;
+  margin: .3rem auto 0;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+}
+
+.classify li {
+  -webkit-box-flex: 1;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  width: 20%;
+  /* For old syntax, otherwise collapses. */
+  -webkit-flex: 1;
+  /* Chrome */
+  flex: 1;
+  text-align: center;
+}
+
+.classify li span {
+  display: inline-block;
+  width: .7rem;
+  height: .7rem;
+  border-radius: .7rem;
+  background: #f6a64d;
+  border: 1px solid #677985;
+  line-height: .7rem;
+  color: #677985;
+  font-size: .16rem;
+  font-weight: bold;
+}
+
+.classify li .cur {
+  color: #f6a64d;
+  background: #677985;
+  border: none;
+}
+
+h3.title {
+  text-align: center;
+  margin: .2rem 0 .1rem;
+}
+
+h3.title>span {
+  margin: 0 .05rem;
+}
+
+h3.title img {
+  display: inline;
+  vertical-align: middle;
+  width: .26rem;
+}
+
+.clist-production {
+  width: 90%;
+  margin: 0 auto;
+  line-height: .26rem;
+}
+
+a.author-btn {
+  float: right;
+  padding: 0 .25rem;
+  height: .3rem;
+  line-height: .3rem;
+  background: url('/Public/img/atv/author-btn.png') center no-repeat;
+  background-size: contain;
+  color: #8b3600;
+  font-size: .14rem;
+}
+
+.manga-detail-cnt .manga-detail-cnt-head {
+  padding: 10px 20px 0;
+}
+
+.manga-detail-cnt .manga-author-name {
+  margin: 10px 0 0;
+  color: #ccc;
+}
+
+.setting {
+  width: 95%;
+  margin: 0 auto .7rem;
+}
+
+.surefix {
+  position: fixed;
+  bottom: 0;
+  left: 5%;
+  width: 90%;
+}
+
+.fixedbtn {
+  display: block;
+  width: 45%;
+  height: .45rem;
+  background: url('/Public/img/atv/sub-btn.png') no-repeat center center;
+  background-size: contain;
+  color: #8b3600;
+  text-align: center;
+  line-height: .42rem;
+  font-size: .16rem;
+}
+
+.nozp {
+  width: 50%;
+  margin: .4rem auto;
+}
+
+.checkmb {
+  font-size: .14rem;
+  text-decoration: underline;
+}
+
+.templateImglayer {
+  height: 5rem;
+  overflow-x: auto;
+}
+
+.layui-m-layer0 .layui-m-layerchild {
+  background-color: rgba(0, 0, 0, 0);
+  overflow-x: auto;
+}
+
+.layui-m-layercont {
+  padding: 0;
+}
+
+.layui-m-layerchild h3 {
+  height: .4rem;
+  line-height: .4rem; 
+}
+.essay-item .essay-item-fa,.clist-item .clist-item-fa{
+  display: inline-block;
+  width: 1.6rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.essay-item .essay-item-sa,.clist-item .clist-item-sa{
+  display: inline-block;
+  width: 1.2rem;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

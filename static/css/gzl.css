@@ -1,0 +1,63 @@
+body {
+  background: #f8f8f8 url(../img/gzl/glbg.jpg) 0 0 repeat-y;
+}
+
+img {
+  display: block;
+}
+
+.gzl-nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.gzl-nav-item {
+  text-align: center;
+}
+
+.gzl-nav-item img {
+  width: 90%;
+}
+
+.gzl-nav-item img:nth-of-type(2) {
+  display: none;
+}
+
+.gzl-nav-item img:nth-of-type(1) {
+  display: inline-block;
+}
+
+.gzl-nav-item.cur img:nth-of-type(2) {
+  display: inline-block;
+}
+
+.gzl-nav-item.cur img:nth-of-type(1) {
+  display: none;
+}
+
+.load-btn {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  color: #555;
+  font-size: 12px;
+}
+a.linkShowg{
+  display: block;
+  width: 1.8rem;
+  height: .6rem;
+  position: absolute;
+  z-index: 10;
+  top: 1.05rem;
+  left: 50%;
+  margin-left: -.9rem;
+  background: url(/Public/img/gzl/award.png) center center no-repeat;
+  background-size: contain;
+}

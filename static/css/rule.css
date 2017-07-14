@@ -1,0 +1,107 @@
+.rule-cnt {
+  padding: 20px;
+  color: #333;
+  line-height: 2.0rem;
+}
+
+.rule-cnt h2 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.rule-cnt h2,
+.rule-cnt h3,
+.rule-cnt h4 {
+  font-weight: bold;
+  line-height: 2.6rem;
+}
+
+.rule-cnt > ol > li {
+  margin-top: 20px;
+}
+
+.rule-cnt table {
+  width: 100%;
+  text-align: center;
+}
+
+.rule-cnt table th {
+  font-weight: normal;
+  background-color: #f4f4f4;
+}
+
+.rule-cnt table td,
+.rule-cnt table th {
+  border: 1px solid #ccc;
+  width: 50%;
+  line-height: 2.4rem;
+}
+
+.rule-footer {
+  font-size: 1.2rem;
+}
+
+.rule-footer .toolbar {
+  padding: 0;
+}
+
+.rule-footer ion-col {
+  padding: 0;
+}
+
+.rule-footer ion-col:nth-of-type(1) {
+  background-color: #333;
+  color: #f4f4f4;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.rule-footer ion-col .button {
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.rule-cnt {
+  padding: 20px;
+  color: #333;
+  line-height: .20rem;
+}
+
+.rule-cnt h2 {
+  font-size: .16rem;
+  text-align: center;
+}
+
+.rule-cnt h2,
+.rule-cnt h3,
+.rule-cnt h4 {
+  font-weight: bold;
+  line-height: .26rem;
+}
+
+.rule-cnt > ol > li {
+  margin-top: 20px;
+}
+
+.rule-cnt table {
+  width: 100%;
+  text-align: center;
+}
+
+.rule-cnt table th {
+  font-weight: normal;
+  background-color: #f4f4f4;
+}
+
+.rule-cnt table td,
+.rule-cnt table th {
+  border: 1px solid #ccc;
+  width: 50%;
+  line-height: .24rem;
+}
+
+.rule-footer {
+  font-size: .12rem;
+}

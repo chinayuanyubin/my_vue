@@ -1,0 +1,259 @@
+/*我的积分 头部黑色背景 开始*/
+
+.me-quiz-top-box {
+  background-color: #333;
+  height: 160px;
+  text-align: center;
+  position: relative;
+}
+
+.me-quiz-top-box .left-top {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #f4f4f4;
+}
+
+.me-quiz-top-box .right-top {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #16d1d7;
+  text-decoration: underline;
+}
+
+.me-quiz-top-box .right-bottom {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #16d1d7;
+}
+
+.me-quiz-top-box:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.me-quiz-top-box strong {
+  font-size: .2rem;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  color: #16d1d7;
+}
+
+
+/*头部黑色区域结束*/
+
+
+/*积分记录开始*/
+
+.quiz-integral-record-item {
+  padding: 15px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.quiz-integral-record-item .top {
+  text-align: right;
+  font-size: .12rem;
+  color: #999;
+}
+
+.quiz-integral-record-item .bottom {
+  margin-top: 5px;
+}
+
+
+/*积分记录结束*/
+
+
+/*积分排行开始*/
+
+.quiz-integral-rank-item {
+  padding: 10px 20px 5px;
+  background-color: #fff;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.quiz-integral-rank-item .top {
+  text-align: right;
+}
+
+.quiz-integral-rank-item .bottom {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.quiz-integral-rank-item .score {
+  color: #16d1d7;
+  margin-top: 3px;
+}
+
+.quiz-integral-rank-item:nth-of-type(-n+3) .score {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.quiz-integral-rank-item:nth-of-type(1) .iconfont {
+  color: #ffd100;
+}
+
+.quiz-integral-rank-item:nth-of-type(2) .iconfont {
+  color: #d0e0f1;
+}
+
+.quiz-integral-rank-item:nth-of-type(3) .iconfont {
+  color: #e0ba76;
+}
+
+.has-icon-rank .has-icon-order {
+  display: inline-block;
+  margin: 0 10px;
+  font-style: normal;
+}
+
+.has-icon-rank .iconfont {
+  font-size: 28px;
+  vertical-align: middle;
+}
+
+
+/*积分排行结束*/
+
+
+/*有奖竞猜列表开始*/
+
+.quiz-item {
+  margin-bottom: 5px;
+  background-color: #fff;
+  padding: 10px 15px;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.quiz-item .quiz-q {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.quiz-item .quiz-a {
+  margin-top: 10px;
+}
+
+.quiz-item .quiz-a .quiz-btn {
+  display: inline-block;
+  min-width: 70px;
+  background-color: #16d1d7;
+  color: #fff;
+  border-radius: 4px;
+  line-height: 28px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.quiz-item .quiz-a .quiz-gray-btn {
+  background-color: #ccc;
+}
+
+.quiz-item .quiz-right {
+  padding: 10px;
+  text-align: center;
+  line-height: 1.6em;
+  background-color: #f4f4f4;
+  -webkit-flex: 0 0 6em;
+  -ms-flex: 0 0 6em;
+  flex: 0 0 8em;
+}
+
+.quiz-item .quiz-info {
+  color: #999;
+  font-size: .12rem;
+  margin-top: 10px;
+}
+
+.bar {
+  text-align: center;
+  color: #fff;
+  line-height: 40px;
+  height: 40px;
+  background-color: #ccc;
+  font-size: 14px;
+}
+
+
+/*有奖竞猜列表结束*/
+
+
+/*报名人数榜 参赛作品数 浏览人数榜开始*/
+
+.quiz-other-item a {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 20px;
+  height: 44px;
+  line-height: 44px;
+  background-color: #fff;
+  border-bottom: 1px solid #f4f4f4;
+  color: #000;
+}
+
+.quiz-other-item a > span:nth-of-type(2) {
+  color: #16d1d7;
+}
+
+.quiz-other-item:nth-of-type(1) .iconfont {
+  color: #ffd100;
+}
+
+.quiz-other-item:nth-of-type(2) .iconfont {
+  color: #d0e0f1;
+}
+
+.quiz-other-item:nth-of-type(3) .iconfont {
+  color: #e0ba76;
+}
+
+
+/*报名人数榜 参赛作品数 浏览人数榜结束*/
+
+
+/*报名人数 的 右上角菜单*/
+
+.quiz-sub-menu {
+  position: absolute;
+  top: .44rem;
+  right: 0;
+  box-shadow: 0px 1px 5px #999;
+  display: none;
+}
+
+.quiz-sub-menu a {
+  display: block;
+  line-height: 40px;
+  background-color: #fff;
+  width: 100px;
+  text-align: center;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.quiz-sub-menu a,
+.quiz-sub-menu a:visited {
+  color: #000;
+}

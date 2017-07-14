@@ -1,0 +1,105 @@
+.head {
+	width: 100%;
+	height: 0.44rem;
+	position: relative;
+	line-height: 0.44rem;
+	border-bottom: 1px solid #F4F4F4;
+}
+
+.back {
+	width: 0.44rem;
+	height: 0.44rem;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.title {
+	width: 100%;
+	text-align: center;
+	font-size: .16rem;
+	font-weight: bold;
+}
+.main{
+	width: 3rem;
+	margin: 0 auto;
+}
+.coverUploadWrap{
+	width: 3rem;
+	clear: both;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.name{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	border-bottom: 1px solid #f4f4f4
+}
+#submitBtn,#submitBtn-rs{
+	display: inline-block;
+	width: 1.9rem;
+	height: 0.4rem;
+	text-align: center;
+	background: #16D1D7;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 5px;
+	margin-bottom: 0.2rem;
+	line-height: 0.4rem;
+}
+.textarea{
+	width: 100%;
+	height: 1.8rem;
+	border: 1px solid #ccc;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	color: #666;
+}
+.lable span{
+	margin-left: 3px;
+	color: #999;
+}
+.lable{
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+select{
+	width: 3rem;
+	margin-left: -3px;
+}
+option{
+	line-height: 0.4rem;
+}
+.btnLi{
+	padding-top: 20px;
+	text-align: center;
+}
+.inp{
+	color: #666;
+	width: 2.2rem;
+	height: 0.4rem;
+	padding-left: 3px;
+}
+.uploadWorkFileInfo{
+	color: #999;
+	font-size: 12px;
+}
+.uploadImg{
+	width: 3rem;
+	margin: 0 auto;
+	padding: 0.2rem 0;
+	border-bottom: 1px solid #F4F4F4;
+}
+.uploadPluginBox .btn{
+	border-color: #16D1D7;
+	padding: 4px 12px;
+}
+.dn{
+	display: none;
+}
+.layui-m-layer-enterLayer .layui-m-layerbtn span[yes]{
+	color: #16D1D7;
+	font-weight: bold;
+}

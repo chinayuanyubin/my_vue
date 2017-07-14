@@ -1,0 +1,56 @@
+/**
+   <ul>
+     <li class="log-item">
+       <div class="log-item-top">
+         <span class="log-item-top-left">
+          <strong>微信|待支付</strong> <small>20160213432324</small>
+        </span>
+         <span class="log-item-top-right">
+          <strong>¥ 10.00</strong>
+        </span>
+       </div>
+       <div class="log-item-bottom">
+         <span class="log-item-bottom-left">
+          <small>2016-12-21 18:18:18</small>
+        </span>
+         <span class="log-item-bottom-right"></span>
+       </div>
+     </li>
+     </ul>
+ */
+
+.log-month-title {
+  background-color: #eee;
+  line-height: 30px;
+  height: 30px;
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+.log-item {}
+
+.log-item-cnt {
+  background-color: #fff;
+  padding: 20px 15px;
+  border-bottom: 1px solid #f4f4f4;
+  font-size: 14px;
+}
+
+.log-item-top,
+.log-item-bottom {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.log-item-top-right {
+  width: 10em;
+  text-align: right;
+}
+
+.log-item small {
+  color: #999;
+}

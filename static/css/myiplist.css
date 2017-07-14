@@ -1,0 +1,112 @@
+body{
+  background-color: #f4f4f4;
+}
+.head {
+  width: 100%;
+  height: 0.44rem;
+  position: relative;
+  line-height: 0.44rem;
+  border-bottom: 1px solid #F4F4F4;
+  background-color: #fff;
+}
+
+.back {
+  display: block;
+  width: 0.44rem;
+  height: 0.44rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: .16rem;
+  font-weight: bold;
+}
+.my-iplist{
+  padding: 10px;
+  border-radius: 3px;
+}
+.my-ipitem{
+  padding-top: .08rem;
+  background-color: #fff;
+  margin-bottom: .1rem; 
+}
+.my-ipitem p{
+  line-height: 0.35rem;
+  padding-left: .12rem;
+  border-bottom: 1px solid #f4f4f4;
+}
+.my-ipitem p span{
+  color: #999;
+}
+.list-bot{
+  border-top: 1px solid #f4f4f4;
+  padding: .05rem;
+}
+.list-bot:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.addIcon{
+  font-size: 0;
+}
+.addIcon>.icon:after{
+  content: "";
+  display: block;
+  height: .35rem;
+  width: 1px;
+  background-color: #f4f4f4;
+  position: absolute;
+  top: .1rem;
+  right: 0;
+}
+.addIcon>.comic:before{
+  content: "";
+  display: block;
+  height: .35rem;
+  width: 1px;
+  background-color: #f4f4f4;
+  position: absolute;
+  top: .1rem;
+  left: 0;
+}
+.addIcon>.poster,.addIcon>.icon,.addIcon>.comic{
+  display: inline-block;
+  text-align: center;
+  padding: 6px 0;
+}
+.addIcon{
+  border: none;
+  margin-top: 3px;
+}
+.addIcon .iconBox{
+  width: 100%;
+} 
+.addIcon .iconBox img{
+  width: .3rem;
+}
+.addIcon .iconName{
+  font-size: .12rem;
+  line-height: .2rem;
+}
+.addIcon>.wmBtn{
+  margin-top: .1rem; 
+}
+.wmBtn{
+  padding: .06rem;
+  background-color: #ccc;
+  color: #fff;
+  border-radius: .04rem;
+  float: right;
+  margin-right: .05rem;
+  margin-top: .02rem;
+  font-size: .1rem;
+}
+.bg1d7{
+  background-color: #16D1D7;
+}

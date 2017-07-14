@@ -1,0 +1,125 @@
+body{
+	background: #f2f2f2
+}
+.head {
+	width: 100%;
+	height: 0.44rem;
+	position: relative;
+	line-height: 0.44rem;
+	border-bottom: 1px solid #F4F4F4;
+	background: #fff;
+}
+
+.back {
+	width: 0.44rem;
+	height: 0.44rem;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.title {
+	width: 100%;
+	text-align: center;
+	font-size: .18rem;
+	font-weight: bold;
+}
+.withdraw-body{
+	padding: .05rem .15rem;
+}
+.default-defa{
+	line-height: .34rem;
+	font-size: .18rem;
+}
+.default-change{
+	display: block;
+	line-height: .26rem;
+	font-size: .12rem;
+	background: #16d1d7;
+	color: #fff;
+	padding: 0 .05rem;
+	border-radius: 3px;
+	margin-top: .05rem; 
+}
+.default-body{
+	font-size: .18rem;
+	font-weight: bold;
+	line-height: .34rem;
+	padding-bottom: 0.08rem;
+	border-bottom: 1px solid #ccc;
+}
+.deposit-num{
+	padding-top: 0.1rem;
+	line-height: .24rem;
+	font-weight: bold;
+}
+.withdraw-num,.code-box{
+	margin-top: .15rem;
+	margin-bottom: .05rem;
+	height: .45rem;
+	background: #fff;
+	line-height: .45rem;
+	border: 1px solid #ccc;
+}
+.withdraw-num label,.code-box label{
+	padding-left: .1rem;
+}
+.withdraw-num input{
+	width: 2rem;
+	padding-left: 5px;
+}
+.code-box input{
+	width: 1.5rem;
+	padding-left: 5px;
+}
+.decimal{
+	width: .4rem;
+	height: 100%;
+	background: #ccc;
+	text-align: center;
+	float: right;
+}
+.getCode{
+	width: 0.9rem;
+	text-align: center;
+	height: 100%;
+	background: #16d1d7;
+	color: #fff;
+	float: right;
+}
+.getAgain{
+	width: 0.9rem;
+	text-align: center;
+	height: 100%;
+	background: #ccc;
+	color: #fff;
+	float: right;
+}
+.submit-btn{
+	margin-top: .2rem;
+	width: 100%;
+	height: .4rem;
+	background: #16d1d7;
+	color: #fff;
+	font-size: .18rem;
+	line-height: .4rem;
+	text-align: center;
+	border-radius: 0.03rem;
+	margin-bottom: 0.05rem;
+}
+.withdraw-footer{
+	border-top: 1px solid #ccc;
+	margin-top: 0.2rem;
+}
+.notice{
+	padding-top: 0.2rem;
+	text-align: center;
+}
+.notice .iconfont{
+	font-size: .34rem;
+	color: #ff0000;
+}
+.mt3{
+	margin-top: 0.03rem;
+}

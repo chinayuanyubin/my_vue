@@ -1,0 +1,55 @@
+.header-right-multi {
+  padding: 0;
+  font-size: 0;
+}
+
+.header-right-multi i {
+  padding: 0 15px;
+  line-height: 44px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.header-right-multi .icon-dianzan1.cur {
+  color: #16d1d7;
+}
+
+.manga-detail-cnt .manga-detail-cnt-head {
+  padding: 10px 20px;
+}
+
+.manga-detail-cnt .manga-author-name {
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.manga-detail-cnt .manga-author-name a,
+.manga-detail-cnt .manga-author-name a:visited {
+  color: #16d1d7;
+}
+
+.manga-detail-cnt .manga-detail-cnt-body {
+  text-align: center;
+}
+
+.manga-detail-cnt .manga-detail-cnt-body img {
+  max-width: 100%;
+  vertical-align: middle;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.manga-detail-cnt .manga-detail-cnt-body .forbid-use {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.manga-comment-cnt .comment-head {
+  color: #333;
+  font-weight: normal;
+  line-height: 40px;
+  padding-left: 15px;
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+  font-size: 12px;
+}

@@ -1,0 +1,314 @@
+.head {
+	width: 100%;
+	height: 0.44rem;
+	position: relative;
+	line-height: 0.44rem;
+	border-bottom: 1px solid #F4F4F4;
+}
+
+.back {
+	width: 0.44rem;
+	height: 0.44rem;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.title {
+	width: 100%;
+	text-align: center;
+	font-size: .16rem;
+	font-weight: bold;
+}
+.section{
+	width: 100%;
+	height: 0.8rem;
+}
+.mainLogin{
+	width: 2.4rem;
+	margin: 0 auto;
+}
+.mainLogin li{
+	width: 2.4rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	list-style: none;
+	border-bottom: 1px solid #f4f4f4;
+}
+.lable span{
+	margin-left: 3px;
+	color: #999;
+}
+.inp{
+	width: 1.7rem;
+	border: none;
+	padding: 0 3px;
+	color: #666;
+}
+.reg{
+	margin: 0.4rem auto 0 auto;
+	width: 2.2rem;
+	text-align: center;
+}
+#regBtn{
+	display: inline-block;
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	background: #16d1d7;
+	color: #fff;
+	border-radius: 5px;
+}
+.haveLogin{
+	width: 100%;
+	text-align: center;
+	margin-top: 0.3rem;
+	font-size: 12px;
+}
+.haveLogin a{
+	color: #16D1D7;
+	font-size: 12px;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #16D1D7;
+}
+.end{
+	width: 3.2rem;
+	margin: 0.3rem auto;
+	font-size: 12px;
+}
+/*协议*/
+.rule-cnt {
+	padding: 20px;
+	color: #333;
+	line-height: 0.2rem
+}
+
+.rule-cnt h2 {
+	font-size: 0.16rem;
+	text-align: center
+}
+
+.rule-cnt h2,
+.rule-cnt h3,
+.rule-cnt h4 {
+	font-weight: bold;
+	line-height: 0.26rem
+}
+
+.rule-cnt>ol>li {
+	margin-top: 20px
+}
+
+.rule-cnt table {
+	width: 100%;
+	text-align: center
+}
+
+.rule-cnt table th {
+	font-weight: normal;
+	background-color: #f4f4f4
+}
+
+.rule-cnt table td,
+.rule-cnt table th {
+	border: 1px solid #ccc;
+	width: 50%;
+	line-height: 0.24rem
+}
+
+.rule-footer {
+	font-size: 0.12rem
+}
+
+.rule-footer .toolbar {
+	padding: 0
+}
+
+.rule-footer ion-col {
+	padding: 0
+}
+
+.rule-footer ion-col:nth-of-type(1) {
+	background-color: #333;
+	color: #f4f4f4;
+	text-align: center;
+	padding-top: 5px
+}
+
+.rule-footer ion-col .button {
+	height: 44px;
+	margin: 0;
+	padding: 0;
+	border-radius: 0
+}
+
+.rule-cnt {
+	padding: 20px;
+	color: #333;
+	line-height: 0.2rem
+}
+
+.rule-cnt h2 {
+	font-size: 0.16rem;
+	text-align: center
+}
+
+.rule-cnt h2,
+.rule-cnt h3,
+.rule-cnt h4 {
+	font-weight: bold;
+	line-height: 0.26rem
+}
+
+.rule-cnt>ol>li {
+	margin-top: 20px
+}
+
+.rule-cnt table {
+	width: 100%;
+	text-align: center
+}
+
+.rule-cnt table th {
+	font-weight: normal;
+	background-color: #f4f4f4
+}
+
+.rule-cnt table td,
+.rule-cnt table th {
+	border: 1px solid #ccc;
+	width: 50%;
+	line-height: 0.24rem
+}
+
+.rule-footer {
+	font-size: 0.12rem
+}
+
+.rule-footer .toolbar {
+	padding: 0
+}
+
+.rule-footer ion-col {
+	padding: 0
+}
+
+.rule-footer ion-col:nth-of-type(1) {
+	background-color: #333;
+	color: #f4f4f4;
+	text-align: center;
+	padding-top: 5px
+}
+
+.rule-footer ion-col .button {
+	height: 44px;
+	margin: 0;
+	padding: 0;
+	border-radius: 0
+}
+
+.setting-cnt ion-list .item small {
+	font-size: 1.0rem;
+	color: #999
+}
+
+.photo-wrap {
+	margin-top: 40px
+}
+
+.photo-wrap img {
+	width: 100%
+}
+
+.content-ios.setting-cnt {
+	background-color: #f4f4;
+}
+.bdbf4{
+	border-bottom: 1px solid #f4f4f4;
+}
+.pb5{
+	padding-bottom: 5px;
+}
+.zbtn{
+	padding-left: .2rem;
+	padding-right: .2rem;
+	text-align: center;
+	display: inline-block;
+	text-align: center;
+	height: .36rem;
+	line-height: .36rem;
+	background-color: #16d1d7;
+	color:#fff;
+	border-radius:5px;
+}
+.getAgain{
+	padding-left: .2rem;
+	padding-right: .2rem;
+	text-align: center;
+	display: inline-block;
+	text-align: center;
+	height: .36rem;
+	line-height: .36rem;
+	color:#fff;
+	border-radius:5px;
+	background-color: #ccc;
+}
+.zbtn:hover, .zbtn:active, .zbtn:focus{
+	color:#fff;
+}
+
+/*绑定手机号*/
+.safety{
+	width: 100%;
+	font-size: 12px;
+	color: #aaa;
+	line-height: 30px;
+	text-align: center;
+}
+.bandUl{
+	width: 2.4rem;
+	margin: 0 auto;
+	padding-top: .5rem;
+}
+.bandUl li{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	border-bottom: 1px solid #f4f4f4;
+	margin-top: 15px;
+}
+.bandUl li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 0.4rem;
+	color: #fff;
+	background: #16D1D7;
+	border-radius: 5px;
+}
+.sgSpan{
+	color: #ccc;
+}
+#bandPhone,#code{
+	width: 1.7rem;
+}
+/*绑定手机号结束*/
+/*忘记密码开始*/
+.sendCode{
+	display: inline-block;
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	background: #16d1d7;
+	color: #fff;
+	border-radius: 5px;
+}
+.countDown{
+	text-align: center;
+	font-size: .1rem;
+	margin-top: .3rem
+}
+.countDownNum{
+	font-size: .1rem
+}

@@ -1,0 +1,56 @@
+.head-acindex{
+	width: 100%;
+	height: .44rem;
+}
+.head-acindex li{
+	text-align: center;
+	line-height: 0.44rem;
+	color: #999;
+	font-size: .15rem;
+}
+.head-acindex .cur{
+	font-weight: bold;
+	color: #333;
+	padding-bottom: 3px;
+	border-bottom: 3px solid #333;
+}
+.atv-list-box{
+	padding-bottom: 5px;
+}
+.atv-list-box .banner{
+	width: 100%;
+	overflow: hidden;
+}
+.atv-list-box .banner img{
+	width: 100%;
+}
+.bannerIcon{
+	color: #fff;
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	height: .3rem;
+	line-height: .3rem;
+	padding:0 .1rem;
+	background: rgba(0,0,0,.6);
+}
+.bannerIcon span:nth-child(2){
+	margin:0 .05rem;
+}
+.name {
+	padding: .03rem .12rem .05rem;
+	border-bottom: 1px solid #f4f4f4
+}
+.name a{
+	font-size: .15rem;
+	font-weight: bold;
+}
+.data{
+	font-size: .12rem;
+	color: #16d1d7;
+	padding-left: .15rem;
+	line-height: .26rem;
+}
+.bgimg{
+	background: #f9f9f9
+}

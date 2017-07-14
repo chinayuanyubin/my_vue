@@ -1,0 +1,28 @@
+body {
+  background-color: #f8f8f8;
+}
+
+.me-nav-list .iconfont {
+  font-size: 36px;
+  color: #16d1d7;
+}
+
+.income-header-sum {
+  background-color: #333;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  padding: 30px 0;
+  text-align: center;
+  color: #16d1d7;
+  font-size: 16px;
+  font-family: Arial;
+}
+.income-header-sum>div{
+  flex: 1;
+  text-align: left;
+  padding-left: 10%;
+}
+

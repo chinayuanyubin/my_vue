@@ -1,0 +1,684 @@
+/**
+ * atv 详情页开始
+ */
+
+.atv-detail {
+  color: #fff;
+}
+
+
+/* .atv-detail a,
+.atv-detail a:hover,
+.atv-detail a:visited {
+  color: #fff;
+}
+ */
+
+.atv-theme-detail {
+  background-color: #f4f4f4;
+}
+
+.atv-detail-bubble-wrap {
+  position: relative;
+}
+
+.layui-m-layer {
+  color: #000;
+}
+
+
+/*竞猜开始*/
+
+.quiz-box {
+  background-color: #000;
+  padding: 15px 20px;
+  position: relative;
+  border-top: 1px solid #444;
+  margin-top: 10px;
+}
+
+.quiz-box .quiz-q {
+  text-align: center;
+  font-size: 14px;
+  color: #16d1d7;
+}
+
+.quiz-box .quiz-a {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.quiz-box .quiz-a .quiz-btn {
+  display: inline-block;
+  min-width: 70px;
+  background-color: #16d1d7;
+  color: #fff;
+  border-radius: 4px;
+  line-height: 28px;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.quiz-box .quiz-a .quiz-gray-btn {
+  background-color: #ccc;
+}
+
+.quiz-box .quiz-link-box {
+  /*margin-top: 10px;*/
+  text-align: right;
+}
+
+.quiz-link-box a,
+.quiz-link-box a:visited {
+  color: #16d1d7;
+}
+
+.quiz-box .icon-guanbi {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #fff;
+}
+
+.quiz-box-close {
+  display: none;
+}
+
+
+/*竞猜结束*/
+
+.bubble-item:nth-of-type(1) {
+  /*  top: 10.66vw;
+ left: 31.33vw; */
+  top: .4rem;
+  left: 1.17rem;
+}
+
+.bubble-item:nth-of-type(2) {
+  /* top: 45.33vw;
+  left: 8.07vw; */
+  top: 1.70rem;
+  left: .30rem;
+}
+
+.bubble-item:nth-of-type(3) {
+  /* top: 52.67vw;
+  left: 50.33vw; */
+  top: 1.98rem;
+  left: 1.89rem;
+}
+
+.bubble-item:nth-of-type(4) {
+  /* top: 112.4vw;
+  left: 10.33vw; */
+  top: 4.21rem;
+  left: .39rem;
+}
+
+.bubble-item:nth-of-type(5) {
+  /* top: 112.87vw;
+  left: 55.67vw; */
+  top: 4.23rem;
+  left: 2.09rem;
+}
+
+.bubble-item:nth-of-type(6) {
+  /* top: 147.67vw;
+  left: 28.67vw; */
+  top: 5.54rem;
+  left: 1.08rem;
+}
+
+.bubble-item:nth-of-type(7) {
+  /* top: 180.07vw;
+  left: 57.2vw; */
+  top: 6.75rem;
+  left: 2.14rem;
+}
+
+.bubble-item:nth-of-type(8) {
+  /* top: 184.73vw;
+  left: 4.67vw; */
+  top: 6.93rem;
+  left: .17rem;
+}
+
+.bubble-item:nth-of-type(9) {
+  /* top: 213.93vw;
+  left: 35vw; */
+  top: 8.02rem;
+  left: 1.31rem;
+}
+
+.bubble-item:nth-of-type(10) {
+  /* top: 247.2vw;
+  left: 7vw; */
+  top: 9.27rem;
+  left: .26rem;
+}
+
+.bubble-item:nth-of-type(11) {
+  /* top: 255.3vw;
+  left: 50.93vw; */
+  top: 9.57rem;
+  left: 1.91rem;
+}
+
+.bubble-item:nth-of-type(12) {
+  /* top: 291.27vw;
+  left: 23.87vw; */
+  top: 10.92rem;
+  left: .89rem;
+}
+
+.bubble-item-img-box {
+  margin-top: 30px;
+}
+
+.bubble-item.freeze {
+  background-image: url('../img/icebubble.png');
+}
+
+.bubble-item.self {
+  background-image: url('../img/bubbleds.png');
+}
+
+.bubble-item {
+  font-size: .12rem;
+  position: absolute;
+  width: 39%;
+  max-width: 750px;
+  /*height: 39vw;*/
+  text-align: center;
+  color: #fff;
+  background-image: url('../img/bubble.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bubble-item-cnt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.bubble-item:before {
+  content: "";
+  padding-bottom: 100%;
+  display: inline-block;
+  /*background-color: #fff;*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  border-radius: 50%;
+}
+
+.bubble-item-img-box {
+  height: 9.33vw;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.bubble-item-img-box img {
+  width: 14.4vw;
+  height: 100%;
+}
+
+.bubble-item-img-box h3 {
+  font-size: .14rem;
+  margin-top: 5px;
+  text-align: center;
+}
+
+@media (min-width: 356px) {
+  h3 {
+    margin-top: 5px;
+  }
+  .bubble-handle {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 400px) {
+  h3 {
+    font-size: .14rem;
+  }
+}
+
+.atv-detail-bottom {
+  background: #000;
+}
+
+.atv-detail {
+  background-color: #000;
+}
+
+.flow-list {
+  padding-top: 20px;
+  color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box;
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+  display: -webkit-flex;
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  justify-content: space-between;
+}
+
+.flow-item {
+  line-height: 1.4em;
+  /*flex: 1;*/
+  vertical-align: top;
+  z-index: 100;
+  position: relative;
+  /*margin-left: 10px;*/
+}
+
+.flow-item a {
+  color: #fff;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.flow-item.gray a {
+  color: #999;
+}
+
+.js-title {
+  color: #16D1D7;
+  font-weight: bold;
+  font-size: 0.15rem;
+  line-height: 40px;
+  text-align: center;
+}
+
+.js-title span {
+  color: #fedf37;
+}
+
+.js-body {
+  width: 90%;
+  margin: 0 auto;
+  color: #16D1D7;
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+  padding: 5px 10px;
+  border: 1px solid #16D1D7;
+}
+
+.flow-item:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: #16d1d7;
+  display: inline-block;
+  margin-bottom: 3px;
+  box-shadow: 0 0 10px 3px #16d1d7;
+}
+
+.flow-item.gray:before {
+  background-color: #666;
+  box-shadow: 0 0 10px 3px #666;
+}
+
+
+/**
+ * atv主题详情页开始
+ */
+
+
+/*时间轴*/
+
+.tline-box {
+  width: 100%;
+  margin: 6px 0;
+}
+
+.tline-list .tline-item.doing {
+  color: #FFF;
+  background-color: #16d1d7;
+}
+
+.tline-list .tline-item.done {
+  color: rgba(22, 209, 215, .5);
+  background-color: #000;
+}
+
+.tline-list .tline-item.this {
+  color: rgba(22, 209, 215, 1);
+}
+
+.tline-list .tline-item {
+  padding: 10px 10px;
+  color: #aaa;
+  height: .77rem;
+  border-radius: 6px;
+  background-color: #333;
+}
+
+
+/*推广*/
+
+.generalize {
+  width: 95%;
+  margin: 0 auto;
+  background: #F4F4F4;
+  padding: 0.05rem 0.1rem;
+  border: 2px solid #333;
+  text-align: center;
+  font-size: 0.12rem;
+}
+
+
+/*公司介绍 导师结束 征集说明*/
+
+.intro-txt {
+  padding: 15px;
+  background-color: #f4f4f4;
+}
+
+.atv-intro-box .avatar {
+  position: relative;
+  padding-top: 6px;
+  margin-top: 10px;
+  font-size: .12rem;
+  vertical-align: middle;
+}
+
+.atv-intro-box .avatar img {
+  width: .36rem;
+  height: .36rem;
+  border-radius: .36rem;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.collapse-cnt {
+  display: none;
+}
+
+
+/* .has-swiper-cnt{
+  display: block;
+}
+ */
+
+.collapse-cnt-show {
+  display: block;
+}
+
+.zj-des {
+  min-height: 3.6rem;
+}
+
+
+/*参赛选手*/
+
+
+/* -box {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+ */
+
+.avatar-list {
+  overflow: hidden;
+  margin-top: 2.5vw;
+  margin-left: 2.5vw;
+}
+
+.avatar-item {
+  position: relative;
+  float: left;
+  width: 30vw;
+  height: 30vw;
+  margin-bottom: 2.5vw;
+  margin-right: 2.5vw;
+  background-color: #000;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.avatar-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.avatar-item .avatar-item-mask {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+}
+
+.avatar-item .avatar-item-mask p{
+  margin: auto;
+  color: #fff;
+}
+
+.fab-circle {
+  width: .6rem;
+  height: .6rem;
+  line-height: .6rem;
+  border-radius: .6rem;
+  background-color: #16d1d7;
+  text-align: center;
+  display: inline-block;
+  position: fixed;
+  bottom: .6rem;
+  right: .1rem;
+  color: #fff;
+  font-size: .16rem;
+  z-index: 9;
+}
+
+.flow-img-box {
+  width: 100%;
+  background-color: #000;
+}
+
+.flow-img-box img {
+  width: 100%;
+  display: block;
+}
+
+
+/**
+ * atv主题详情页开始
+ */
+
+
+/**
+ * 参赛作品开始
+ * 
+ */
+
+.atv-work-item {
+  margin-top: 5px;
+  height: 50vw;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  background-color: #fff;
+}
+.atv-work-item-zj{
+  margin-top: 0
+}
+.pkImg{
+  padding: .08rem 0;
+  text-align: center
+}
+.pkImg img{
+  width: 1rem
+}
+.atv-work-item .img-box,
+.atv-work-item .tg-tag {
+  -webkit-flex: 0 0 50vw;
+  -ms-flex: 0 0 50vw;
+  flex: 0 0 50vw;
+}
+
+.atv-work-item .img-box {
+  height: 50vw;
+  position: relative;
+}
+.entrance{
+  height: .24rem;
+  width: 100%;
+  font-size: .2rem;
+  line-height: .24rem;
+  text-align: center;
+  position: absolute;
+  font-weight: bold;
+  top: 50%;
+  left: 0;
+  margin-top: -.2rem; 
+  color: #fff
+}
+.shade{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.shadeImg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.sdp1{
+	color: #ffea00;
+	font-size: .2rem;
+	text-align: center;
+	position: relative;
+	font-weight: bold;
+	margin-top: .35rem;
+}
+.sdp2{
+	color: #fff;
+	font-size: .12rem;
+	text-align: center;
+	position: relative;
+  	padding: 0 .2rem;
+	margin-top: .2rem;
+}
+.atv-work-item .img-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.atv-work-item .vote-tag {
+  padding: 2px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  font-size: .12rem;
+  line-height: .2rem;
+  margin-top: 3px;
+}
+
+.atv-work-item .pro-tag {
+  color: #e3cb09;
+}
+
+.atv-work-item .industry-tag {
+  color: #16d1d7;
+}
+
+.atv-work-item .tag-box {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.atv-work-item .txt-box {
+  padding: 10px 5px 5px 10px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+}
+
+.atv-work-item .txt-box > * {
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+.atv-work-item h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.atv-work-item .vote-btn {
+  display: block;
+  width: 1.35rem;
+  height: .32rem;
+  margin-top: 2px;
+  background-size: cover;
+}
+
+.atv-work-item .vote-pro-btn {
+  background-image: url(../img/atv/grayds.png);
+}
+
+.atv-work-item .vote-pro-btn.doing {
+  background-image: url(../img/atv/greends.png);
+}
+
+.atv-work-item .vote-industry-btn {
+  background-image: url(../img/atv/grayvote.png);
+}
+
+.atv-work-item .vote-industry-btn.doing {
+  background-image: url(../img/atv/greenvote.png);
+}
+
+.atv-work-item .tg-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 62px;
+  height: 54px;
+  background-image: url(../img/atv/tg.png);
+  background-size: cover;
+}
+
+.atv-work-item .handle {
+  color: #999;
+  font-size: .12rem;
+  margin-top: 5px;
+}
+
+.layui-m-layer-enterLayer .layui-m-layerbtn span[yes] {
+  color: #16D1D7;
+  font-weight: bold;
+}
+
+
+/**
+ * 参赛作品结束
+ * 
+ */

@@ -1,0 +1,53 @@
+.manga-nav-section a {
+  font-size: 16px;
+}
+
+
+/*作者列表开始*/
+
+.author-list {
+  overflow-x: auto;
+}
+
+.author-list > ul {
+  width: 814px;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.author-list .author-item {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.author-list .author-item-cnt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.author-list .author-item-img img {
+  width: 100px;
+  height: 100px;
+}
+
+.author-list .author-item-cnt {
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 100px;
+  color: #fff;
+}
+
+
+/*作者列表结束*/

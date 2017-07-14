@@ -1,0 +1,58 @@
+/**
+ * 分页开始
+ * 后台封装了分页插件 ,前端只写包它的容器就可以
+ * <div class="tc paginationWrap">
+      {$show}
+    </div>
+ */
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.pagination>li {
+  display: inline-block;
+}
+
+.pagination>li>a .fa {
+  font-size: 20px;
+}
+
+.pagination>li>a {
+  position: relative;
+  /* float: left; */
+  /* width: 40px; */
+  text-decoration: none;
+  color: #999;
+  background-color: #f8f8f8;
+  /*border: 1px solid #ddd;*/
+  margin-left: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  width: .3rem;
+  height: .3rem;
+  line-height: .3rem;
+  background-color: #fff;
+  
+}
+
+.pagination>li>a:hover {
+  color: #16d1d7;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:hover,
+.pagination>.active>a:focus {
+  z-index: 2;
+  color: #fff;
+  background-color: #16d1d7;
+  border-color: #16d1d7;
+  cursor: default;
+}
+
+
+/*分页结束*/

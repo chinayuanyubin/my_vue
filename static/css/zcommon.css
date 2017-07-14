@@ -1,0 +1,1219 @@
+/**
+ * common
+ */
+
+
+/**
+ *
+<extend name="Base/common" />
+<block name="head">
+  <link rel="stylesheet" href="__CSS__/zcommon.css">
+</block>
+<block name="body">
+  <header class="common-header bdbf4">
+    <span onclick="history.go(-1)" class="common-header-left"><i class="iconfont icon-fanhui"></i></span>
+    <h2 class="common-header-title">我的积分</h2>
+    <!-- <span class="common-header-right"><i class="iconfont icon-fanhui"></i></span> -->
+  </header>
+</block>
+ */
+#app{
+  padding-top: 44px;
+  padding-bottom: 50px;
+  overflow-y: auto; 
+}
+.colorRed {
+  color: #f53d3d;
+}
+
+.pb50 {
+  padding-bottom: 50px;
+}
+
+
+/*公共头部开始*/
+
+
+/**
+ * <header class="common-header bdbf4">
+      <span onclick="history.go(-1)" class="common-header-left"><i class="iconfont icon-fanhui"></i></span>
+      <h2 class="common-header-title">我的积分</h2>
+      <!-- <span class="common-header-right"><i class="iconfont icon-fanhui"></i></span> -->
+    </header>
+ */
+
+.common-header {
+  line-height: 44px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 44px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.common-header-title {
+  font-size: 16px;
+  display: inline-block;
+  /*display: block;*/
+  overflow: hidden;
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.common-header-left,
+.common-header-right {
+  line-height: 44px;
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  height: 44px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.common-header-left {
+  left: 0;
+}
+
+.common-header-left:hover,
+.common-header-left:active,
+.common-header-left:visited {
+  color: #000;
+}
+
+.common-header-right {
+  right: 0;
+}
+
+.bdbf4 {
+  border-bottom: 1px solid #f4f4f4;
+}
+
+
+/*公共头部结束*/
+
+
+/**
+ *   
+ *   <h3 class="title-bar title-bar-theme">作者推荐 <i class="iconfont icon-gengduo"></i></h3>
+ */
+
+.title-bar {
+  line-height: .40rem;
+  position: relative;
+  height: .40rem;
+  padding-left: 15px;
+  border-bottom: 1px solid #f4f4f4;
+  background-color: #fff;
+}
+
+.title-bar-theme span {
+  color: #16d1d7;
+}
+
+.title-bar i {
+  display: inline-block;
+  float: right;
+  height: 100%;
+  padding: 0 20px;
+  vertical-align: middle;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+.zpsx {
+  line-height: .40rem;
+  float: right;
+  width: .40rem;
+  height: .40rem;
+  text-align: center;
+}
+
+.zpsx .iconfont {
+  font-size: .2rem;
+}
+
+.zpsxList {
+  position: absolute;
+  z-index: 10;
+  top: .40rem;
+  right: 0;
+  width: 65%;
+  background: #fff;
+}
+
+.zpsxList .zpsxItem {
+  line-height: .40rem;
+  height: .40rem;
+  padding-left: 25px;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.zpsxList .now {
+  background: #f4f4f4;
+}
+
+
+/*底部导航开始*/
+
+
+/*有导航的页面加 这个类名*/
+
+.page-has-footer {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+}
+
+.footer-nav {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.mtRemd5 {
+  width: 100%;
+  height: .8rem;
+}
+
+.footer-nav-cnt {
+  display: flex;
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box;
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+  display: -webkit-flex;
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  max-width: 750px;
+  margin: 0 auto;
+  border-top: 1px solid #f4f4f4;
+  background-color: #fff;
+}
+
+.footer-nav-cnt .nav-item {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  color: #000;
+  flex: 1;
+  -moz-box-flex: 1.0;
+  /*Firefox*/
+  -webkit-box-flex: 1.0;
+  /*Safari,Opera,Chrome*/
+  box-flex: 1.0;
+  /*height: 0.5rem;*/
+}
+
+.footer-nav-cnt .icon {
+  display: inline-block;
+  width: 50px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: contain;
+}
+
+.footer-nav-cnt .nav-item:not(:nth-last-of-type(1)) {
+  border-right: 1px solid #f4f4f4;
+}
+
+.footer-nav-cnt .nav-item:nth-of-type(1) .icon {
+  background-image: url(../img/navicon/nip.png);
+}
+
+.footer-nav-cnt .nav-item.active:nth-of-type(1) .icon {
+  background-image: url(../img/navicon/ip.png);
+}
+
+.footer-nav-cnt .nav-item:nth-of-type(2) .icon {
+  background-image: url(../img/navicon/nmanga.png);
+}
+
+.footer-nav-cnt .nav-item.active:nth-of-type(2) .icon {
+  background-image: url(../img/navicon/manga.png);
+}
+
+.footer-nav-cnt .nav-item:nth-of-type(3) .icon {
+  background-image: url(../img/navicon/npk.png);
+}
+
+.footer-nav-cnt .nav-item.active:nth-of-type(3) .icon {
+  background-image: url(../img/navicon/pk.png);
+}
+
+.footer-nav-cnt .nav-item:nth-of-type(4) .icon {
+  background-image: url(../img/navicon/nme.png);
+}
+
+.footer-nav-cnt .nav-item.active:nth-of-type(4) .icon {
+  background-image: url(../img/navicon/me.png);
+}
+
+.footer-nav-cnt .nav-item .txt {
+  font-size: 12px;
+  color: #999;
+}
+
+.footer-nav-cnt .nav-item.active .txt {
+  color: #16d1d7;
+}
+
+
+/*底部导航结束*/
+
+
+/*类似于我的页面的三个竖着的导航开始*/
+
+
+/**
+ * <ul class="me-nav-list">
+    <li>
+      <a href="/my/record.html">
+        <i class="iconfont icon-zhuanqujifen"></i>
+        <br> 我的积分
+      </a>
+    </li>
+    <li>
+      <a href="/user/myPurse.html">
+        <i class="iconfont icon-qianbao1"></i>
+        <br> 我的钱包
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;" class="qiaodao-item">
+        <i class="iconfont icon-qiandao"></i>
+        <br> 签到
+      </a>
+    </li>
+  </ul>
+ */
+
+.me-nav-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+
+.me-nav-list li {
+  text-align: center;
+  border-right: 1px solid #eee;
+  flex: 1;
+  -webkit-flex: 1;
+  /*margin-top: 5px;*/
+  /*line-height: 40px;*/
+}
+
+.me-nav-list li:nth-last-of-type(1) {
+  border-right: 0;
+}
+
+.me-nav-list li a {
+  display: inline-block;
+  width: 100%;
+  /*height: 40px;*/
+  color: #000;
+}
+
+.me-nav-list li i {
+  font-size: .22rem;
+}
+
+
+/*类似于我的页面的三个竖着的导航结束*/
+
+
+/*横着的导航 有黑色边框在下面 开始*/
+
+
+/**
+ * <div class="nav-section">
+      <ul class="nav-section-list">
+        <li class="nav-section-item cur"><a href="javascript:;">积分记录</a></li>
+        <li class="nav-section-item"><a href="javascript:;">积分排行</a></li>
+      </ul>
+    </div>
+ */
+
+.nav-section-tab {
+  overflow-x: auto;
+}
+
+.nav-section-list-tab {
+  width: 4.6rem;
+}
+
+.nav-section-list-tab .nav-section-item {
+  height: .4rem;
+}
+
+.nav-section-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  border-bottom: 1px solid #f4f4f4;
+  background-color: #fff;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+}
+
+.nav-section-item {
+  text-align: center;
+  flex: 1;
+  -webkit-flex: 1;
+}
+
+.nav-section-item a {
+  line-height: .35rem;
+  display: inline-block;
+  color: #999;
+  border-bottom: 3px solid #fff;
+}
+
+.nav-section-item.cur a {
+  font-weight: bold;
+  color: #000;
+  border-bottom: 3px solid #000;
+}
+
+
+/*横着的导航 有黑色边框在下面 结束*/
+
+
+/*作品列表*/
+
+
+/**
+ *   <ul class="manga-list">
+    <li class="manga-item" ng-reflect-work="[object Object]">
+      <div class="manga-item-img">
+        <img ng-reflect-src="http://img3.2ciyuanjie.com/2cyj/20161209/f/NDpBPaXF8tpY.jpg@47-47-926-702a.jpg" src="http://img3.2ciyuanjie.com/2cyj/20161209/f/NDpBPaXF8tpY.jpg@47-47-926-702a.jpg" ng-reflect-alt="我的名字叫做：我喜欢你" alt="我的名字叫做：我喜欢你" ng-reflect-title="我的名字叫做：我喜欢你" title="我的名字叫做：我喜欢你">
+      </div>
+      <div class="manga-item-tag manga-tag-comic">
+        <div class="manga-tag-inner">
+          <span class="manga-tag-name">漫画</span>
+          <span class="manga-tag-triangle"></span>
+          <span class="manga-tag-parallel"></span>
+        </div>
+      </div>
+      <a href="" class="manga-item-layer">
+      </a>
+      <div class="manga-item-cnt">
+        <h2 class="manga-item-title">我的名字叫做：我喜欢你</h2>
+        <div>
+          <span><i class="iconfont icon-guanzhu"></i> 105</span>
+          <span><i class="iconfont icon-pinglun"></i> 1</span>
+        </div>
+      </div>
+    </li>
+  </ul>
+ */
+
+.manga-list {
+  font-size: .12rem;
+  overflow: hidden;
+}
+
+.manga-list .manga-item {
+  position: relative;
+  float: left;
+  width: 50%;
+  padding-top: 36.84%;
+}
+
+.manga-list .manga-item:nth-of-type(n+3) {
+  border-top: 2px solid transparent;
+}
+
+.manga-list .manga-item:nth-of-type(2n) {
+  border-left: 2px solid transparent;
+}
+
+.manga-list .manga-item-img,
+.manga-list .manga-item-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.manga-list .manga-item-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.manga-list .manga-item-layer {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .1) 60%, rgba(0, 0, 0, .6) 100%);
+}
+
+.manga-list .manga-item-cnt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.manga-list .manga-item-cnt span {
+  margin-right: 5px;
+  color: #ccc;
+}
+
+.manga-list .manga-item-title {
+  overflow: hidden;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.manga-list .manga-item-tag {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 0;
+}
+
+.manga-list .manga-tag-inner {
+  position: relative;
+}
+
+.manga-list .manga-tag-name {
+  line-height: 22px;
+  display: block;
+  overflow: hidden;
+  max-width: 10em;
+  padding-right: 5px;
+  padding-left: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #fff;
+}
+
+.manga-list .manga-tag-triangle {
+  position: absolute;
+  top: 0;
+  right: -22px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-width: 22px 0 0 22px;
+  border-style: solid;
+}
+
+.manga-list .manga-tag-parallel {
+  position: absolute;
+  top: 0;
+  right: -19px;
+  display: inline-block;
+  width: 4px;
+  height: 22px;
+  -webkit-transform: skew(45deg);
+  transform: skew(45deg);
+}
+
+
+/*comic,match,illustration,figure,product,package,mixture*/
+
+.manga-list .manga-tag-comic .manga-tag-name,
+.manga-list .manga-tag-comic .manga-tag-parallel {
+  background-color: rgba(255, 212, 14, .85);
+}
+
+.manga-list .manga-tag-comic .manga-tag-triangle {
+  border-color: transparent transparent transparent rgba(255, 212, 14, .85);
+}
+
+.manga-list .manga-tag-match .manga-tag-name,
+.manga-list .manga-tag-match .manga-tag-parallel {
+  background-color: rgba(153, 204, 255, .85);
+}
+
+.manga-list .manga-tag-match .manga-tag-triangle {
+  border-color: transparent transparent transparent rgba(153, 204, 255, .85);
+}
+
+.manga-list .manga-tag-illustration .manga-tag-name,
+.manga-list .manga-tag-illustration .manga-tag-parallel {
+  background-color: rgba(255, 96, 145, .85);
+}
+
+.manga-list .manga-tag-illustration .manga-tag-triangle {
+  border-color: transparent transparent transparent rgba(255, 96, 145, .85);
+}
+
+.manga-list .manga-tag-figure .manga-tag-name,
+.manga-list .manga-tag-figure .manga-tag-parallel {
+  background-color: rgba(243, 113, 92, .85);
+}
+
+.manga-list .manga-tag-figure .manga-tag-triangle {
+  border-color: transparent transparent transparent rgba(243, 113, 92, .85);
+}
+
+.manga-list .manga-tag-product .manga-tag-name,
+.manga-list .manga-tag-product .manga-tag-parallel {
+  background-color: rgba(191, 64, 227, .85);
+}
+
+.manga-list .manga-tag-product .manga-tag-triangle {
+  border-color: transparent transparent transparent rgba(191, 64, 227, .85);
+}
+
+.manga-list .manga-tag-package .manga-tag-name,
+.manga-list .manga-tag-package .manga-tag-parallel {
+  background-color: rgba(51, 163, 220, .85);
+}
+
+.manga-list .manga-tag-package .manga-tag-triangle {
+  border-color: transparent transparent transparent rgba(51, 163, 220, .85);
+}
+
+.manga-list .manga-tag-mixture .manga-tag-name,
+.manga-list .manga-tag-mixture .manga-tag-parallel {
+  background-color: rgba(22, 209, 215, .85);
+}
+
+.manga-list .manga-tag-mixture .manga-tag-triangle {
+  border-color: transparent transparent transparent rgba(22, 209, 215, .85);
+}
+
+.manga-list .manga-tag-icon .manga-tag-name,
+.manga-list .manga-tag-icon .manga-tag-parallel {
+  background-color: rgba(252, 145, 13, .85);
+}
+
+.manga-list .manga-tag-icon .manga-tag-triangle {
+  border-color: transparent transparent transparent rgba(252, 145, 13, .85);
+}
+
+.manga-list .manga-tag-poster .manga-tag-name,
+.manga-list .manga-tag-poster .manga-tag-parallel {
+  background-color: rgba(254, 109, 114, .85);
+}
+
+.manga-list .manga-tag-poster .manga-tag-triangle {
+  border-color: transparent transparent transparent rgba(254, 109, 114, .85);
+}
+
+
+/*轮播图
+
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <a href=""><img src="http://img3.2ciyuanjie.com/2cyj/20161104/h/wCr6TQ7wrmay.jpg" alt=""></a>
+    </div>
+    <div class="swiper-slide">
+      <a href=""><img src="http://img3.2ciyuanjie.com/2cyj/20161104/h/RWp6k8NAJ8ni.jpg" alt=""></a>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+*/
+
+
+/**
+ * ip授权的列表项
+ <ul class="ip-list">
+   <li class="ip-item">
+     <div class="ip-item-img">
+       <img src="http://img3.2ciyuanjie.com/2cyj/20161002/i/bGG3KiEHpN3D.jpg" alt="娃娃头系列-蔷薇少女" title="娃娃头系列-蔷薇少女">
+     </div>
+     <a href="javascript:;" class="ip-item-layer">
+     </a>
+     <div class="ip-item-cnt">
+       <h2 class="ip-item-title">娃娃头系列-蔷薇少女</h2>
+       <div class="ip-item-bootm">
+         <div class="ip-item-avatar">
+           <a href="javascript:;" class="avatar"><img alt="傀儡娃娃李欢" src="http://img3.2ciyuanjie.com/uploads/header/20150617/1434510479992032198.jpg"></a>
+           傀儡娃娃李欢
+         </div>
+         <div class="ip-handle">
+           <span><i class="iconfont icon-guanzhu"></i> 1811</span>
+           <span><i class="iconfont icon-pinglun"></i> 9</span>
+         </div>
+       </div>
+     </div>
+   </li>
+ </ul>
+ */
+
+.ip-list .ip-item {
+  position: relative;
+  float: none;
+  width: 100%;
+  margin-bottom: 5px;
+  padding-top: 50%;
+}
+
+.ip-list .ip-item .ip-item-title {
+  font-size: 16px;
+  font-weight: bold;
+  overflow: hidden;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.ip-list .ip-item .ip-item-bootm {
+  overflow: hidden;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.ip-list .ip-item .ip-item-avatar {
+  position: relative;
+  float: left;
+  padding-top: 6px;
+  padding-left: 35px;
+  color: #ccc;
+}
+
+.ip-list .ip-item .avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+}
+
+.ip-list .ip-item .avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.ip-list .ip-item .ip-handle {
+  float: right;
+  margin-top: 6px;
+}
+
+.ip-list .ip-item-img,
+.ip-list .ip-item-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ip-list .ip-item-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.ip-list .ip-item-cnt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.ip-list .ip-item-cnt span {
+  margin-right: 5px;
+  color: #ccc;
+}
+
+.ip-list .ip-item-layer {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .1) 50%, rgba(0, 0, 0, .6) 100%);
+}
+
+
+/*隐藏菜单*/
+
+
+/**
+ <div class="hide-menu">
+   <a href="javascript:;" class="cur">作品最多</a>
+   <a href="javascript:;">最新加入</a>
+   <a href="javascript:;">人气最高</a>
+   <a href="javascript:;">粉丝最多</a>
+ </div>
+ */
+
+.hide-menu {
+  position: absolute;
+  z-index: 3;
+  top: 36px;
+  right: 0;
+  display: none;
+  box-shadow: 0 1px 5px #999;
+}
+
+.hide-menu a {
+  font-size: 14px;
+  line-height: 40px;
+  display: block;
+  width: 100px;
+  text-align: center;
+  border-bottom: 1px solid #f4f4f4;
+  background-color: #fff;
+}
+
+.hide-menu .cur {
+  border-left: 4px solid #333;
+}
+
+
+/*关注列表*/
+
+
+/**
+     <ul class="follow-list">
+       <li class="follow-item">
+         <div class="follow-item-left">
+           <div class="follow-item-avatar">
+             <a href=""><img src="http://img3.2ciyuanjie.com/2cyj/20160829/g/ZKApaMiP68Rh.jpg@406-93-342-342a" alt="zhm" title="zhm"></a>
+           </div>
+         </div>
+         <div class="follow-item-center">
+           <h4 class="follow-item-name"><a href="">小白</a></h4>
+           <p class="follow-item-info
+ ">一个快乐的小二货,一个快乐的小二货,一个快乐的小二货,一个快乐的小二货,一个快乐的小二货,一个快乐的小二货,一个快乐的小二货,一个快乐的小二货,一个快乐的小二货,一个快乐的小二货,一个快乐的小二货,一个快乐的小二货,</p>
+           <p class="follow-item-data">12粉丝/0关注</p>
+         </div>
+         <div class="follow-item-right">
+           <a href="javascript:;" class="zbtn follow-btn bgMain">加关注</a>
+           <!-- <a href="javascript:;" class="zbtn follow-btn bgC">已关注</a> -->
+         </div>
+       </li>
+     </ul>
+ */
+
+.follow-item {
+  display: flex;
+  display: -webkit-flex;
+  margin-top: 5px;
+  padding: 10px 15px;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+.follow-item-left {
+  width: 40px;
+  flex: 0 0 40px;
+  align-self: center;
+}
+
+.follow-item-avatar {
+  overflow: hidden;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.follow-item-avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.follow-item-center {
+  min-width: 130px;
+  padding-left: 10px;
+  text-align: left;
+  flex: 0;
+}
+
+.follow-item-name {
+  font-size: 14px;
+}
+
+.follow-item-info {
+  overflow: hidden;
+  width: 12em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.follow-item-data,
+.follow-item-info {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #999;
+}
+
+.follow-item-right {
+  text-align: right;
+  flex: 0 0 90px;
+  -webkit-flex: 0 0 90px;
+  align-self: center;
+  -webkit-align-self: center;
+}
+
+
+/*写评论*/
+
+.comment-textarea {
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+
+.has-shadow {
+  box-shadow: 0 1px 5px #ccc;
+}
+
+
+/*评论列表*/
+
+
+/**
+ <div>
+   <ul class="comment-list">
+     <li class="comment-item">
+       <div class="comment-item-left">
+         <div class="avatar">
+           <a href="javascript:;">
+             <img src="http://img3.2ciyuanjie.com/2cyj/default/header/default.jpg" alt="小二" title="小二">
+           </a>
+         </div>
+       </div>
+       <div class="comment-item-right">
+         <h5 class="comment-item-name"><a href="">sunshine</a></h5>
+         <small class="comment-item-date">2116-12-22</small>
+         <p class="comment-item-para">哈哈好可爱哈哈好可爱哈哈好可爱哈哈好可爱哈哈好可爱哈哈好可爱哈哈好可爱哈哈好可爱哈哈好可爱哈哈好可爱</p>
+         <small class="comment-item-floor">
+           <em>2F</em>
+           <!-- 有删除的权限才显示 -->
+           <b class="comment-item-del">删除</b>
+         </small>
+       </div>
+     </li>
+   </ul>
+ </div>
+ */
+
+.comment-list {
+  background-color: #f4f4f4;
+}
+
+.comment-item {
+  display: flex;
+  display: -webkit-flex;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #f4f4f4;
+  background-color: #fff;
+}
+
+.comment-item:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+
+.comment-item-left {
+  margin-top: 10px;
+  margin-left: 15px;
+  flex: 0 0 40px;
+}
+
+.comment-item-floor {
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.comment-item-floor em {
+  color: #16d1d7;
+}
+
+.comment-item-floor b {
+  font-weight: normal;
+  margin-left: 10px;
+  color: #999;
+}
+
+.comment-item-left .avatar {
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+.comment-item-left .avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.comment-item-name {
+  font-size: 14px;
+}
+
+.comment-item-date {
+  font-size: 12px;
+  color: #999;
+}
+
+.comment-item-para {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.comment-item-right {
+  position: relative;
+  padding: 10px 15px 10px 0;
+  flex-grow: 1;
+}
+
+
+/*记录什么的  就是整行都可以点*/
+
+
+/**
+ <ul>
+   <li class="line-link-item">
+     <a href="javascript:;">
+       <span class="line-link-item-left">充值记录</span>
+       <i class="iconfont icon-jinru line-link-item-right"></i>
+     </a>
+   </li>
+</ul>
+ */
+
+.line-link-item {
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+
+.line-link-item > a {
+  font-size: 14px;
+  line-height: 44px;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 44px;
+  padding: 0 15px;
+}
+
+.line-link-item-left {
+  float: left;
+}
+
+.line-link-item-right {
+  float: right;
+  color: #ccc;
+}
+
+
+/**表单元素
+<div class="zform-box">
+  <div class="zform-item">
+    <label for="" class="zform-label">发卡行</label>
+    <select name="" id="" class="zform-select">
+      <option value="1">中国建设银行</option>
+      <option value="2" selected="">中国工商银行</option>
+    </select>
+  </div>
+  <div class="zform-item">
+    <label for="" class="zform-label">支行名称</label>
+    <input type="text" name="" class="zform-text zform-required" id="">
+  </div>
+  <a href="javascript:;" class="zbtn bgMain zbtn-block mt20" id="save">保存</a>
+</div>
+
+<form action="" method="" id="form">
+  <div class="zform-box">
+    <div class="zform-item">
+      <label for="" class="zform-label">公司名称<span class="colorRed">*</span></label>
+      <input placeholder="请务必和证件照一致" maxlength="25" data-label="公司名称" data-tip="公司名称不能少于2个字符" data-reg="^.{2,25}$" type="text" name="" class="zform-text required" id="">
+    </div>
+    <div class="zform-item">
+      <div class="ml10">
+        <div data-label="营业执照" id="license" class="uploadPluginBox"></div>
+        <p class="uploadWorkFileInfo pb10 mt10"> 请上传营业执照扫描件，支持jpg/gif/png格式(可不传)</p>
+      </div>
+    </div>
+  </div>
+  <div class="zform-item">
+    <label for="" class="zform-label">发卡行</label>
+    <select name="" id="" class="zform-select">
+      <option value="1">中国建设银行</option>
+      <option value="2" selected="">中国工商银行</option>
+    </select>
+  </div>
+  <a href="javascript:;" class="zbtn bgMain zbtn-block mt20" id="save">保存</a>
+</form>
+
+ */
+
+.zform-box {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.zform-item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.zform-item1 {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.zform-label {
+  padding-right: 5px;
+  border-right: 1px solid #ccc;
+}
+
+.zform-text,
+.zform-select {
+  padding: 0 5px;
+  border: none;
+  flex: 1;
+  -webkit-flex: 1;
+}
+
+
+/*上传图片*/
+
+.ossUploadItem {
+  display: inline-block;
+  width: 80px;
+  height: 100px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+
+.ossUploadItem img {
+  height: 100px;
+}
+
+
+/*新的单选和复选框开始*/
+
+
+/*
+
+<div>
+  <span for="">性别</span>
+  <span class="zcr">
+    <input type="radio" name="" id="same">
+    <label for="same" class="radioLabel">男的ff</label>
+  </span>
+  <span class="zcr">
+    <input type="radio" name="gender" id="female">
+    <label for="female" class="radioLabel">女</label>
+  </span>
+</div>
+<br>
+<br>
+<div>
+  <span>兴趣</span>
+  <span class="zcr">
+    <input type="checkbox" name="hobby" id="draw">
+    <label for="draw">画画</label>
+  </span>
+  <span class="zcr">
+    <input type="checkbox" name="hobby" id="read">
+    <label for="read">读书</label>
+  </span>
+</div>
+
+ */
+
+
+/*复选框开始*/
+
+.zcr input[type='checkbox'],
+.zcrRevert input[type='checkbox'] {
+  display: none;
+  margin-right: 10px;
+}
+
+.zcr input[type='checkbox'] + label:before,
+.zcrRevert input[type='checkbox'] + label:after {
+  font-family: FontAwesome;
+  /*自定义*/
+  font-size: inherit;
+  display: inline-block;
+  /*防止图标长度不一样*/
+  width: 14px;
+  /*未选中的图标*/
+  content: '\f096';
+  letter-spacing: 3px;
+  color: #999;
+}
+
+.zcr input[type='checkbox']:checked + label:before,
+.zcrRevert input[type='checkbox']:checked + label:after {
+  /*选中时的图标*/
+  content: '\f14a';
+  color: #16d1d7;
+}
+
+.zcrRevert input[type='checkbox'] + label:after {
+  margin-left: 5px;
+}
+
+
+/**
+ * 免费试用的标签
+ */
+
+.probation-label {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  writing-mode: tb-rl;
+  background: #16d1d7;
+  color: #fff;
+  letter-spacing: 2px;
+  padding: 5px 3px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.probation-label:before,
+.probation-label:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -11px;
+  border-style: solid;
+  left: 0;
+  border-width: 13px 13px 0 0;
+  border-color: #16d1d7 transparent transparent transparent;
+}
+
+.probation-label:before {
+  right: 0;
+  border-width: 0 13px 13px 0;
+  border-color: transparent #16d1d7 transparent transparent;
+}
