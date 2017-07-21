@@ -1,16 +1,14 @@
 <template>
-  <div id="index">
+  <div class="index">
     <header class="common-header bdbf4">
       <h2 class="common-header-title">IP授权</h2>
     </header>
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div v-for="item in swip" class="swiper-slide">
-          <a :href=item.url><img :src=item.img alt=""></a>
-        </div>     
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
+    <swiper :options="swiperOption" ref="mySwiper">
+      <swiper-slide v-for="(item, index) in swip" :key="index">
+        <a :href=item.url><img :src=item.img alt=""></a>
+      </swiper-slide>   
+      <div class="swiper-pagination"  slot="pagination"></div>  
+    </swiper>
     <!-- 本周排名 -->
     <h3 class="title-bar title-bar-theme">本周排名 <span v-on:click="goUrl"><i class="iconfont icon-gengduo"></i></span></h3>
     <div class="ip-rank">
@@ -48,16 +46,80 @@
           </div>
         </div>
       </li> 
+      <div class="tc lh40" v-show="loading">
+        加载中
+      </div>
     </ul>
   </div>
 </template>
 
-<style>
-@import '/static/css/swiper.min.css';
+<style scoped>
+/*圆角正方形 有图 有字*/
+
+
+/**
+ <div class="ip-rank">
+   <ul class="ip-rank-list">
+     <li class="ip-rank-item">
+       <img alt="{{work.title}" src="http://img3.2ciyuanjie.com/2cyj/20161002/g/ep7b2NwHyfcQ.jpg@0-0-500-500a.jpg" title="经典娃娃头系列-傀儡娃娃">
+       <a href="javascript:;" class="ip-rank-item-mask">
+         经典娃娃头系列-傀儡娃娃
+       </a>
+     </li>
+   </ul>
+ </div>
+ */
+.ip-rank {
+  width: 100%;
+  overflow-x: auto;
+}
+.ip-rank-list {
+  width: 800px;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  height: 86px;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.ip-rank-list .ip-rank-item {
+  width: 86px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f99;
+  position: relative;
+  text-align: center;
+}
+
+.ip-rank-list .ip-rank-item img {
+  width: 86px;
+  height: 100%;
+}
+
+.ip-rank-list .ip-rank-item .ip-rank-item-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 86px;
+  height: 100%;
+  line-height: 86px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: inherit;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  /*font-size: 1.2rem;*/
+  padding: 0 10px;
+  color: #fff;
+}
+
 </style>
 
-<script>
-import Swiper from '../../../static/lib/swiper.min.js'
+<script type="ecmascript-6">
+import { swiper, swiperSlide } from 'vue-awesome-swiper'
 export default {
   data () {
     return {
@@ -67,18 +129,33 @@ export default {
       loadMoreDisable: true,
       distance: 3,
       busy: false,
-      num: 0
+      loading: false,
+      num: 0,
+      swiperOption: {
+        loop: true,
+        initialSlide: 1,
+        autoplay: 2000,
+        observer: true,
+        observeParents: true,
+        pagination: '.swiper-pagination'
+      }
     }
+  },
+  components: {
+    swiper,
+    swiperSlide
   },
   created () {
     this.getDetail()
   },
-  mounted () {
-    this.lunbo()
+  computed: {
+    swiper() {
+      return this.$refs.mySwiper.swiper
+    }
   },
   methods: {
     goUrl () {
-      this.$router.push({path: '/manga/iplist'})
+      this.$router.push({name: 'iplist'});
     },
     getDetail () {
       this.axios.all([this.getSwiper(), this.getRanking()]).then(this.axios.spread((swip, ranking) => {
@@ -97,12 +174,14 @@ export default {
         return false
       } else {
         this.busy = true
+        this.loading = true
       }
       this.axios.get('manga/recent', this.ipApiConfig).then(res => {
         let arr = res.data.content.slice(this.num, this.num + this.distance)
         this.recent = this.recent.concat(arr)
         this.num += this.distance
         this.busy = false
+        this.loading = false
         if (this.num >= res.data.content.length) {
           this.loadMoreDisable = false
           return false

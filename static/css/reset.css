@@ -92,21 +92,10 @@ h3 {
 
 html,
 body {
-  font-size: 100px;
+  font-size: 75px;
+  max-width: 750px;
+  margin: 0 auto; 
 }
-
-body,
-html {
-  width: 100%;
-  /*overflow-x: hidden;*/
-}
-
-html,
-body {
-  min-height: 100%;
-}
-
-
 /*-webkit-appearance: none;*/
 
 img {
@@ -114,6 +103,7 @@ img {
 }
 
 body {
+  height: 100vh;
   font-size: .14rem;
   font-family: "Microsoft YaHei", Arial;
 }

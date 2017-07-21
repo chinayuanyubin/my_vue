@@ -3,7 +3,6 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import rem from '../static/js/rem.js'
 import Axios from 'axios'
 import VueAxios from 'vue-axios'
 import {ipApiConfig} from './apiconfig'
@@ -21,6 +20,6 @@ new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App, rem, Vue }
+  components: { App, Vue }
 })
 

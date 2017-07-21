@@ -20,7 +20,7 @@
   </div>
 </template>
 
-<script>
+<script type="ecmascript-6">
 // var example = new Vue({
 //   el: '#example-1',
 //   data: {

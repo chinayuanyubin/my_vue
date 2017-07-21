@@ -14,6 +14,14 @@ export default new Router({
       }
     },
     {
+      path: '/index/iplist',
+      name: 'iplist',
+      component: require('../components/index/iplist'),
+      meta: {
+        title: 'iplist'
+      }
+    },
+    {
       path: '/manga',
       name: 'manga',
       component: require('../components/manga/manga'),
@@ -26,7 +34,7 @@ export default new Router({
       name: 'activity',
       component: require('../components/activity/activity'),
       meta: {
-        title: 'ip'
+        title: 'activity'
       }
     },
     {
@@ -35,14 +43,6 @@ export default new Router({
       component: require('../components/my/my'),
       meta: {
         title: 'my'
-      }
-    },
-    {
-      path: '/manga/iplist',
-      name: 'iplist',
-      component: require('../components/manga/iplist'),
-      meta: {
-        title: 'iplist'
       }
     }
   ],

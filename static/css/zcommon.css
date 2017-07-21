@@ -20,7 +20,6 @@
 #app{
   padding-top: 44px;
   padding-bottom: 50px;
-  overflow-y: auto; 
 }
 .colorRed {
   color: #f53d3d;

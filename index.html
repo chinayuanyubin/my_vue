@@ -3,11 +3,32 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="static/css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="static/css/zcommon.css">
+    <link rel="stylesheet" type="text/css" href="static/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/animate.min.css">
+    <script type="text/javascript">
+      (function () {
+        reset();
+        window.addEventListener("orientationchange", function () {
+          reset();
+        });
+        window.addEventListener("resize", function () {
+          reset();
+        });
+        function reset () {
+          var width = document.documentElement.clientWidth;
+          var size = 100 * (width / 375) > 200 ? 200 : 100 * (width / 375);
+          document.querySelector("html").style.fontSize = size + 'px';
+        }
+      })();
+    </script>
     <title>二次元界</title>
   </head>
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    
   </body>
 </html>

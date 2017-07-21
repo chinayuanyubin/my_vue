@@ -1,5 +1,5 @@
 <template>
-  <div id="iplist">
+  <div class="iplist">
     <header class="common-header bdbf4">
       <span onclick="history.go(-1)" class="common-header-left"><i class="iconfont icon-fanhui"></i></span>
       <h2 class="common-header-title">IP列表</h2>
@@ -30,12 +30,65 @@
     </ul>
   </div>
 </template>
-<style>
-@import '/static/css/swiper.min.css';
-@import '/static/css/manga-index.css';
+<style scoped>
+.iplist{
+  width: 100%;
+}
+.manga-nav-section a {
+  font-size: 16px;
+}
+/*作者列表开始*/
+
+.author-list {
+  overflow-x: auto;
+}
+
+.author-list > ul {
+  width: 814px;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.author-list .author-item {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.author-list .author-item-cnt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.author-list .author-item-img img {
+  width: 100px;
+  height: 100px;
+}
+
+.author-list .author-item-cnt {
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 100px;
+  color: #fff;
+}
+
+
+/*作者列表结束*/
+
 </style>
 
-<script>
+<script type="ecmascript-6">
 export default {
   data () {
     return {
@@ -56,7 +109,6 @@ export default {
       this.axios.get('manga/iplist', this.ipApiConfig).then(res => {
         this.distance = res.data.content.totalPages
         let arr = res.data.content.data.slice(this.num, this.num + this.distance)
-        console.log(res.data.content.data.length)
         this.iplist = this.iplist.concat(arr)
         this.num += this.distance
         this.busy = false

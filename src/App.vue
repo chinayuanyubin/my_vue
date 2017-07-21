@@ -17,9 +17,3 @@ export default {
 }
 </script>
 
-<style>
-@import '/static/css/iconfont.css';
-@import '/static/css/zcommon.css';
-@import '/static/css/ip-index.css';
-@import '/static/css/animate.min.css';
-</style>
