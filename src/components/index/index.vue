@@ -123,7 +123,7 @@ import { swiper, swiperSlide } from 'vue-awesome-swiper'
 export default {
   data () {
     return {
-      swip: '1212321321',
+      swip: '',
       ranking: '',
       recent: [],
       loadMoreDisable: true,
