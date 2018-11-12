@@ -149,13 +149,13 @@ export default {
     this.getDetail()
   },
   computed: {
-    swiper() {
+    swiper () {
       return this.$refs.mySwiper.swiper
     }
   },
   methods: {
     goUrl () {
-      this.$router.push({name: 'iplist'});
+      this.$router.push({name: 'iplist'})
     },
     getDetail () {
       this.axios.all([this.getSwiper(), this.getRanking()]).then(this.axios.spread((swip, ranking) => {
@@ -187,16 +187,16 @@ export default {
           return false
         }
       })
-    },
-    lunbo () {
-      this.Swiper = new Swiper('.swiper-container', {
-        loop: true,
-        autoplay: 2000,
-        observer: true,
-        observeParents: true,
-        pagination: '.swiper-pagination'
-      })
     }
+    // lunbo () {
+    //   this.Swiper = new Swiper('.swiper-container', {
+    //     loop: true,
+    //     autoplay: 2000,
+    //     observer: true,
+    //     observeParents: true,
+    //     pagination: '.swiper-pagination'
+    //   })
+    // }
   }
 }
 </script>
