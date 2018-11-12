@@ -92,7 +92,7 @@
 export default {
   data () {
     return {
-      distance: '11111111',
+      distance: '',
       iplist: [],
       loadMoreDisable: true,
       busy: false,
