@@ -118,12 +118,12 @@
 
 </style>
 
-<script type="ecmascript-6">
+<script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 export default {
   data () {
     return {
-      swip: '',
+      swip: '1212321321',
       ranking: '',
       recent: [],
       loadMoreDisable: true,
