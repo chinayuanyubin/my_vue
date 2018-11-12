@@ -113,7 +113,7 @@
   white-space: nowrap;
   /*font-size: 1.2rem;*/
   padding: 0 10px;
-  color: #fff;
+  color: #ffffff;
 }
 
 </style>
