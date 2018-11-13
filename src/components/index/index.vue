@@ -124,7 +124,7 @@ export default {
   data () {
     return {
       swip: '',
-      ranking: '',
+      ranking: '1',
       recent: [],
       loadMoreDisable: true,
       distance: 3,
